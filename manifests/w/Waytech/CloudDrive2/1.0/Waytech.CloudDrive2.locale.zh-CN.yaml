@@ -1,5 +1,5 @@
 # Created with YamlCreate.ps1 Dumplings Mod
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.9.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.10.0.schema.json
 
 PackageIdentifier: Waytech.CloudDrive2
 PackageVersion: "1.0"
@@ -13,7 +13,7 @@ PackageName: CloudDrive2
 PackageUrl: https://www.clouddrive2.com/download.html
 License: 专有软件
 LicenseUrl: https://www.clouddrive2.com/eula.html
-Copyright: © 2024 CloudDrive. All rights reserved.
+Copyright: © 2025 CloudDrive. All rights reserved.
 CopyrightUrl: https://www.clouddrive2.com/eula.html
 ShortDescription: CloudDrive 是一个强大的多云盘管理工具，为用户提供包含云盘本地挂载的一站式的多云盘解决方案。
 Description: |-
@@ -27,8 +27,10 @@ Tags:
 - 发送
 - 文件
 - 服务器
-ReleaseNotes: 修复 115open 上传加密文件可能失败的问题
-ReleaseNotesUrl: https://github.com/cloud-fs/cloud-fs.github.io/releases/tag/v0.8.11
+ReleaseNotes: |-
+  1. 修复修改本地缓存淘汰策略重启后修改失效的问题
+  2. 修复部分本地缓存文件重启后访问仍需要重新下载的问题，旧版本的问题文件本次更新后可能会被重新下载一次
+ReleaseNotesUrl: https://github.com/cloud-fs/cloud-fs.github.io/releases/tag/v0.9.20
 PurchaseUrl: https://www.clouddrive2.com/pricing.html
 ManifestType: locale
-ManifestVersion: 1.9.0
+ManifestVersion: 1.10.0
